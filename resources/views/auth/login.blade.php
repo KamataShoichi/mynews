@@ -29,7 +29,7 @@
                                 
                                 <div class="col-md-6">
                                     <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-                                    @if ($errors->('password'))
+                                    @if ($errors->has('password'))
                                         <span class="invalid-feedback">
                                             <strong>{{ $errors->first('password') }}</strong>
                                         </span>
@@ -50,7 +50,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-8 offset-md-4">
                                     <button type="submit" class="btn btn-primary">
-                                        {{ __('messages.login') }}
+                                        {{ __('messages.Login') }}
                                     </button>
                                 </div>
                             </div>
