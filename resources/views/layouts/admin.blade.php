@@ -7,7 +7,7 @@
         
         <meta name="csrf-token" content="{{ csrf_token() }}">
         
-        <title>@yiled('title')</title>
+        <title>@yield('title')</title>
         
         <script src="{{ secure_asset('js/app.js') }}"></script>
         
@@ -59,7 +59,7 @@
             </nav>
             
             <main class="py-4">
-                @yiled('content')
+                @yield('content')
             </main>
         </div>
     </body>
