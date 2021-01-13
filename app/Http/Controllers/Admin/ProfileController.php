@@ -53,7 +53,7 @@ class ProfileController extends Controller
         $profile->fill($profile_form)->save();
         
         $profile_history = new Profile_History;
-        $profile_history->profile_id = $profile_id;
+        $profile_history->profile_id = $profile->id;
         $profile_history->edited_at = Carbon::now();
         $profile_history->save();
         
