@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <hr color="#800000">
+        <hr color="#ff0000">
         @if(!is_null($headline))
             <div class="row">
                 <div class="headline col-md-10 mx-auto">
